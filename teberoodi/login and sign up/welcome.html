@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>صفحه خوش آمدگویی</title>
+    <link rel="stylesheet" href="https://teberoodi.storage.iran.liara.space/css/4.css">
+      <link rel="icon" href="https://teberoodi.storage.iran.liara.space/picture-1/icon.png" sizes="32x32" type="png">
+  </head>
+  <body>
+    <div class="intro">
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="boxfather">
+        <div class="box">
+          <h1>عضویت شما را در سایت طب رودی تبریک عرض می نماییم</h1>
+          <br>
+          <center>
+          <a href="#">
+          <button>صفحه اصلی سایت</button>
+          </a>
+          <a href="dashboard/dashboard.html">
+                    <button>ورود به پنل کاربری</button>
+</a>
+</center>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function(){
+        $('.homepage').hide();
+        $('.box').delay(500).effect("bounce", { times: 8 }, 800);
+        $('.box').hide().slideDown(500);
+
+
+        $('button').click(function(){
+          $('.intro').slideUp(400);
+           $('.box').slideUp(200);
+          $('.homepage').delay(500).slideDown(300);
+        });
+
+      });
+      </script>
+  </body>
+</html>
